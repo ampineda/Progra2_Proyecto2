@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="400.0" prefWidth="590.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrecioEstacionamientosController">
+   <children>
+      <ImageView fitHeight="337.0" fitWidth="527.0" layoutX="58.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/Parking.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="comboTipoVehiculo" layoutX="254.0" layoutY="56.0" prefWidth="150.0" />
+      <TextField fx:id="txtSegundos" layoutX="254.0" layoutY="90.0" />
+      <TextField fx:id="txtPrecio" layoutX="254.0" layoutY="132.0" />
+      <Label layoutX="86.0" layoutY="60.0" prefHeight="17.0" prefWidth="157.0" text="Tipo de Vehiculo:" />
+      <Label layoutX="88.0" layoutY="94.0" prefHeight="17.0" prefWidth="157.0" text="Cantidad de Segundos:" />
+      <Label layoutX="87.0" layoutY="136.0" prefHeight="17.0" prefWidth="157.0" text="Precio por tiempo:" />
+      <Button fx:id="bntGrabar" layoutX="157.0" layoutY="247.0" mnemonicParsing="false" onAction="#grabaDatos" prefHeight="25.0" prefWidth="91.0" text="Grabar" />
+      <Button fx:id="btnCancelar" layoutX="302.0" layoutY="247.0" mnemonicParsing="false" onAction="#CerrarPantalla" prefHeight="25.0" prefWidth="80.0" text="Salir" />
+   </children>
+</Pane>

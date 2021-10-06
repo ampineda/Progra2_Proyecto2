@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="523.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <ImageView fitHeight="533.0" fitWidth="705.0" layoutX="-2.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/Fmenu.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Button id="btnNoEstacionamientos" layoutX="43.0" layoutY="150.0" mnemonicParsing="false" onAction="#AbrirNumeroEstacionamientos" prefHeight="37.0" prefWidth="289.0" text="DEFINIR NUMERO DE ESTACIONAMIENTOS" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button id="btnPrecioEstacionamientos" layoutX="401.0" layoutY="150.0" mnemonicParsing="false" onAction="#AbrirPrecioEstacionamientos" prefHeight="37.0" prefWidth="270.0" text="DEFINIR PRECIO DE ESTACIONAMIENTOS" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button layoutX="43.0" layoutY="200.0" mnemonicParsing="false" onAction="#AbrirIngresoVehiculos" prefHeight="37.0" prefWidth="289.0" text="INGRESO DE VEHICULOS" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button layoutX="401.0" layoutY="200.0" mnemonicParsing="false" onAction="#AbrirEgresoVehiculos" prefHeight="37.0" prefWidth="270.0" text="EGRESO DE VEHICULOS" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button id="btnSalir" fx:id="btnSalir" layoutX="275.0" layoutY="298.0" mnemonicParsing="false" onAction="#SalirSistema" prefHeight="37.0" prefWidth="170.0" text="SALIR DEL SISTEMA" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="btnMostrarParqueo" disable="true" layoutX="564.0" layoutY="344.0" mnemonicParsing="false" onAction="#MuestraParqueo" prefHeight="25.0" prefWidth="142.0" text="MOSTRAR PARQUEO" visible="false" />
+      <Label layoutX="74.0" layoutY="262.0" prefHeight="17.0" prefWidth="328.0" text="INGRESE ESTE NUMERO DE IP EN EL CLIENTE DE PARQUEO:" />
+      <TextField fx:id="txtDireccionIp" editable="false" layoutX="415.0" layoutY="252.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+   </children>
+</Pane>

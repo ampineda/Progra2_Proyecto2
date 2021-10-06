@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="490.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EgresoVehiculoParqueoController">
+   <children>
+      <ImageView fitHeight="510.0" fitWidth="689.0" layoutX="-58.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/Fmenu3.jpg" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="209.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egreso de Vehiculos">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="69.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese numero de placa:" wrappingWidth="262.1171875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+
+      <TextField fx:id="txtNumeroPlaca" layoutX="351.0" layoutY="70.0" promptText="Numero de Placa">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+
+      <Button fx:id="btnGrabar" layoutX="167.0" layoutY="240.0" mnemonicParsing="false" onAction="#SacarVehiculo" prefHeight="43.0" prefWidth="97.0" text="Sacar" />
+      <Button fx:id="btnCerrar" layoutX="370.0" layoutY="239.0" mnemonicParsing="false" onAction="#CerrarPantalla" prefHeight="43.0" prefWidth="97.0" text="Salir" />
+      <CheckBox fx:id="checkImprimirFactura" layoutX="210.0" layoutY="142.0" mnemonicParsing="false" onAction="#ControlesFactura" text="Imprimir Factura de Parqueo" />
+      <TextField fx:id="txtNit" disable="true" layoutX="209.0" layoutY="173.0" />
+      <TextField fx:id="txtNombre" disable="true" layoutX="209.0" layoutY="201.0" />
+      <Label layoutX="51.0" layoutY="177.0" prefHeight="18.0" prefWidth="151.0" text="NIT:" />
+      <Label layoutX="51.0" layoutY="205.0" prefHeight="18.0" prefWidth="158.0" text="Nombre de Cliente:" />
+   </children>
+</AnchorPane>
